@@ -1,0 +1,1 @@
+install_git "elixir-master" "https://github.com/elixir-lang/elixir.git" "v1.14.0"

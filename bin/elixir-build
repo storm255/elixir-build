@@ -295,7 +295,8 @@ list_definitions() {
 
 parse_release_version() {
   local release_url="$1"
-  echo "$(echo "$release_url" | sed 's/https\:\/\/github\.com\/elixir\-lang\/elixir\/releases\/download\/v//' | sed 's/\/Precompiled\.zip$//')"
+  echo "$(echo "$release_url" | sed 's/https\:\/\/github\.com\/elixir\-lang\/elixir\/releases\/download\/v//' | sed 's/\/elixir-otp-25.zip$//')"
+  #echo "$(echo "$release_url" | sed 's/https\:\/\/github\.com\/elixir\-lang\/elixir\/releases\/download\/v//' | sed 's/\/elixir-opt-25\.zip$//')"
 }
 
 is_defined() {
